@@ -10,32 +10,32 @@
 </head>
 
 <body>
-    <header class="menu_top">
-        <nav>
-            <img class="logo" src="img/journal.svg" alt="logo" width="40px">
-            <a href="index.html">Strona główna</a>
-            <a href="nauka-html.html">Nauka HTML</a>
-            <a href="nauka-css.html">Nauka CSS</a>
-            <a href="nauka-javascript.html">Nauka JavaScript</a>
-            <a href="nauka-git.html">Nauka Git-a</a>
+    <header class="header">
+        <nav class="navigation navigation--js">
+          <img class="navigation__logo" src="img/journal.svg" alt="logo" width="40px" />
+          <a class="navigation__link navigation__link--homepage" href="index.html">Strona główna</a>
+          <a class="navigation__link" href="nauka-html.html">Nauka HTML</a>
+          <a class="navigation__link" href="nauka-css.html">Nauka CSS</a>
+          <a class="navigation__link" href="nauka-javascript.html">Nauka JavaScript</a>
+          <a class="navigation__link" href="nauka-git.html">Nauka Git-a</a>
         </nav>
-    </header>
-    <main>
-        <header class="top">
-            <h1>To jest mój dziennik z nauki frontendu. WTF - co ten frontend.</h1>
+      </header>
+    <main class="main">
+        <header class="main__header">
+            <h1 class="main__heading">To jest mój dziennik z nauki frontendu - WTF.</h1>
         </header>
-        <section>
-            <h2>Dzień 1 - 17.04.2020 - Początek.</h2>
+        <section class="notes">
+            <h2 class="notes__heading">Dzień 1 - 17.04.2020 - Początek.</h2>
             <p>Rozpoczęcie kursu i przerobienie pierwszego tygodnia kursu.</p>
-            <h3>Czego się nauczyłem?</h3>
+            <h3 class="notes__heading3">Czego się nauczyłem?</h3>
             <p>Co to jest visual code studio i trochę jego interfejsu.</p>
-            <h3>Co sobie przypomniałem?</h3>
+            <h3 class="notes__heading3">Co sobie przypomniałem?</h3>
             <p>Podstawowe tagi w HTML-u.</p>
         </section>
-        <section>
-            <h2>Dzień 2 - 20.04.2020 - (Ty)dzień 2.</h2>
+        <section class="notes">
+            <h2 class="notes__heading">Dzień 2 - 20.04.2020 - (Ty)dzień 2.</h2>
             <p>Przerobienie drugiego tygodnia kursu.</p>
-            <h3>Czego się nauczyłem?</h3>
+            <h3 class="notes__heading3">Czego się nauczyłem?</h3>
             <p>Warstwy strony internetowej:
                 <ol start="0">
                     <li>Tekst</li>
@@ -46,19 +46,20 @@
             </p>
             <p>Skróty klawiszowe: <b>Ctrl+Shift+P</b> <b>Alt+Shift+F.</b></p>
             <p>Instalowanie dodatków do Visual Code Studio.</p>
-            <h3>Co sobie przypomniałem?</h3>
+            <h3 class="notes__heading3">Co sobie przypomniałem?</h3>
             <p>Podstawowe tagi w CSS.</p>
         </section>
-        <section>
-            <h2>Dzień 3 - 26.04.2020 - JavaScript.</h2>
+        <section class="notes">
+            <h2 class="notes__heading">Dzień 3 - 26.04.2020 - JavaScript.</h2>
             <p>Rozpoczęcie nauki javascriptu</p>
-            <h3>Czego się nauczyłem?</h3>
+            <h3 class="notes__heading3">Czego się nauczyłem?</h3>
             <p>Znacznik script</p>
-            <h3>Co sobie przypomniałem?</h3>
+            <h3 class="notes__heading3">Co sobie przypomniałem?</h3>
             <p>Wstawianie Google fonts na stronę www.</p>
+            <p class="notes__paragraph notes__paragraph--js"></p>
         </section>
 
-        <footer>
+        <footer class="footer">
             <p>Nie wiem co jeszcze będzie w stopce - ale coś tam będzie.</p>
         </footer>
         <script src="main.js"></script>

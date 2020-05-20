@@ -8,27 +8,25 @@
   </head>
 
   <body>
-    <header class="menu_top">
-      <nav>
-        <img class="logo" src="img/journal.svg" alt="logo" width="40px" />
-        <a href="index.html">Strona główna</a>
-        <a href="nauka-html.html">Nauka HTML</a>
-        <a href="nauka-css.html">Nauka CSS</a>
-        <a href="nauka-javascript.html">Nauka JavaScript</a>
-        <a href="nauka-git.html">Nauka Git-a</a>
+    <header class="header">
+      <nav class="navigation">
+        <img class="navigation__logo" src="img/journal.svg" alt="logo" width="40px" />
+        <a class="navigation__link navigation__link--homepage" href="index.html">Strona główna</a>
+        <a class="navigation__link" href="nauka-html.html">Nauka HTML</a>
+        <a class="navigation__link" href="nauka-css.html">Nauka CSS</a>
+        <a class="navigation__link" href="nauka-javascript.html">Nauka JavaScript</a>
+        <a class="navigation__link" href="nauka-git.html">Nauka Git-a</a>
       </nav>
     </header>
-    <main>
-      <header class="top">
-        <div class="page-logo">
-          <img src="img/CSS3_logo.svg" width="60px" />
-        </div>
+    <main class="main">
+      <header class="main__header">
         <h1>Nauka CSS</h1>
+          <img class="main__header--image" src="img/CSS3_logo.svg" width="60px" />
       </header>
-      <section>
-        <h2>Czego się nauczyłem?</h2>
+      <section class="section">
+        <h2 class="section__heading">Czego się nauczyłem?</h2>
 
-        <h3>Własność: display</h3>
+        <h3 class="section__heading3">Własność: display</h3>
         <p>
           block - element zajmuje całą szerokość strony i elementy ustawiają się
           pod sobą.<br />
@@ -38,21 +36,21 @@
           wysokość, do właściwości liniowych.
         </p>
       </section>
-      <section>
-        <h3>
+      <section class="section">
+        <h3 class="section__heading3">
           Własność: min i max do własności wysokości i szerokości
         </h3>
       </section>
-      <section>
-        <h3>Własność: overflow - odcinanie tego co nam wystaje</h3>
+      <section class="section">
+        <h3 class="section__heading3">Własność: overflow - odcinanie tego co nam wystaje</h3>
         <p>
           hidden - chowa wartość która jest poza divem.<br />
           visible - domyślna wartość czyli wystaje poza diva<br />
           auto - często dodaje nam scrola wewnątrz elementu.
         </p>
       </section>
-      <section>
-        <h3>Jednostki</h3>
+      <section class="section">
+        <h3 class="section__heading3">Jednostki</h3>
         <p>px - pixele</p>
         <p>
           % - procenty (procenty względem rodzica) - raczej szerokość a nie
@@ -61,8 +59,8 @@
         <p>vw - viewport width - szerokość całego okna</p>
         <p>vh - viewport height - wysokość całego okna</p>
       </section>
-      <section>
-        <h3>Box model</h3>
+      <section class="section">
+        <h3 class="section__heading3">Box model</h3>
         <p>wartości są clockwise - top right bottom left</p>
         <p>paddding - odległość wewnętrzna do ramki</p>
         <p>
@@ -74,8 +72,8 @@
           margin:auto - wyśrodkowuje element.
         </p>
       </section>
-      <section>
-        <h3>Box sizing</h3>
+      <section class="section">
+        <h3 class="section__heading3">Box sizing</h3>
         <p>content-box - wartość domyślna - pudełko ograniczone contentem</p>
         <p>
           border-box - pudełko ograniczone borderem.<br />
@@ -83,8 +81,8 @@
           wylicza się sama.
         </p>
       </section>
-      <section>
-        <h3>Position</h3>
+      <section class="section">
+        <h3 class="section__heading3">Position</h3>
         <p>static - domyślna pozycja.</p>
         <p>relative - relatywna </p>
         <p>absolute - </br>
@@ -94,19 +92,25 @@
         <p>fixed - jest zafixowany na stronie - wartości top right left bottom</p>
         <p>sticky - jest przyklejony góry strony jeżeli uderzamy w niego z góry.</p>
       </section>
-      <section>
-        <h3>Float - <b>nie służy do budowania layoutów</b></h3>
+      <section class="section">
+        <h3 class="section__heading3">Float - <b>nie służy do budowania layoutów</b></h3>
         <p>left - tak jakby display był inline, a tekst opływał dany element.</p>
         <p>right - to samo tylko na prawo</p>
         <p>clear - czyści to co wystaje poza element</p>
         <p>overflow: hidden -też czyści to wystaje.</p>
-    
+      </section>
+      <section class="section">
+        <h3 class="section__heading3">BEM - block__element--modifier</h3>
+        <p>Standard przypisywania styli w CSS</p>
+        <p>BLOCK - nadrzędny element który ogranicza nasz content</p>
+        <p>ELEMENT - część bloku</p>
+        <p>MODIFIER - modyfikator</p>
       </section>
 
 
 
 
-      <footer>
+      <footer class="footer">
         <p>Nie wiem co jeszcze będzie w stopce - ale coś tam będzie.</p>
       </footer>
     </main>
