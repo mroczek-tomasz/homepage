@@ -1,29 +1,83 @@
 @import url("https://fonts.googleapis.com/css2?family=Lato&family=Special+Elite&display=swap");
 body {
-  background: linear-gradient(to right,rgba(80,190,190,0.7) 0,rgba(0,153,153,0.7) 50%,rgba(0,153,176,0.7) 83%,rgba(0,153,203,0.7) 100%);
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(252, 252, 252, 1) 16%,
+    rgba(250, 250, 250, 1) 100%
+  );
+}
+.article {
+  grid-area: article;
+}
+.aside {
+  grid-area: aside;
+}
+.footer {
+  font-family: "Lato", sans-serif;
+  grid-area: footer;
+}
 
+.header {
+  background-color: #224573;
+  padding-left: 2em;
+  padding-bottom: 1em;
+  margin: 0 auto;
+ 
+}
+
+.main {
+  max-width: 960px;
+  margin: 0 auto;
+  display:grid;
+  grid-template-areas: "header header"
+  "article aside"
+  "footer footer";
+  grid-template-columns: 1fr 200px;
+  column-gap: 1em;
+  row-gap: 1em;
 }
 
 .main__header {
   color: #224573;
   font-family: "Special Elite", cursive;
+  grid-area: header;
 }
 .main__header--image {
   display: inline-block;
   position: absolute;
   top: 90px;
-  left: 83%;
+  left: 80%;
 }
 
 .main__heading {
   color: #ffa431;
   font-family: "Special Elite", cursive;
 }
+.navigation {
+  max-width: 960px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+}
+
+.navigation__link {
+  margin-left: 3em;
+  font-family: "Lato", sans-serif;
+  font-size: 18px;
+  color: #f28729;
+}
+
+.navigation__logo {
+  padding-top: 1em;
+}
 .notes {
   background-color: #ffffff;
   padding: 20pt;
   margin: 20pt;
   font-family: "Lato", sans-serif;
+ 
 }
 .notes__heading {
   color: #ffa431;
@@ -33,7 +87,7 @@ body {
   color: #ffa431;
   font-family: "Special Elite", cursive;
 }
-.notes__paragraph{
+.notes__paragraph {
   color: #0b0b0b;
 }
 
@@ -54,41 +108,6 @@ p {
 .section__heading3 {
   color: #ffa431;
   font-family: "Special Elite", cursive;
-}
-
-.footer {
-  font-family: "Lato", sans-serif;
-}
-
-.header {
-  background-color: #224573;
-  padding-left: 2em;
-  padding-bottom: 1em;
-  margin: 0 auto;
-}
-
-.main {
-  max-width: 960px;
-  margin: 0 auto;
-}
-.navigation {
-  max-width: 960px;
-  margin: 0 auto;
-  display: flex;
-  justify-content: center;
-  align-items: baseline;
-
-}
-
-.navigation__link {
-  margin-left: 3em;
-  font-family: "Lato", sans-serif;
-  font-size: 18px;
-  color: #f28729;
-}
-
-.navigation__logo {
-  padding-top: 1em;
 }
 
 /* Color Theme Swatches in Hex */
