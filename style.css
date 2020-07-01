@@ -12,6 +12,7 @@ body {
 }
 .aside {
   grid-area: aside;
+  font-family: "Lato", sans-serif;
 }
 .footer {
   font-family: "Lato", sans-serif;
